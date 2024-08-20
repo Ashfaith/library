@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>YOUR LIBRARY</h1>
+    </div>
+
+    <div class="container">
+        <div id="sidebar">
+            <div class="new-book">
+                <p>+</p>
+            </div>
+            <span id="close" class="material-symbols-outlined">close</span>
+            <form class="form" id="new-book-form">
+                <div class="input-field">
+                    <label class="input-label" for="title">Book Title:</label>
+                    <input type="text" id="book-title" name="book title">
+                </div>
+                <div class="input-field">
+                    <label class="input-label" for="title">Author:</label>
+                    <input type="text" id="book-author" name="book author">
+                </div>
+                <div class="input-field">
+                    <label class="input-label" for="title">Pages:</label>
+                    <input type="text" id="book-pages" name="book pages">
+                </div>
+                <div class="slider-container">
+                    <p>Read?</p>
+                    <label class="switch">
+                        <input type="checkbox" id="slider">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <button class="add-book" type="submit">Add Book</button>
+            </form>
+        </div>
+
+
+        <div id="main">
+
+            <div class="library-display">
+                <h2 id="empty">Nothing here yet, start adding to your libray!</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
